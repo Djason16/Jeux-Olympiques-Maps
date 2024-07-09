@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/sidebar.css">
+    <title>sidebar</title>
+</head>
+
+<body>
+        
+    <div class="sideBar" id="sideBar">
+        <div class="burger" id="burger">
+            <span id="bSliceTop"></span>
+            <span id="bSliceMiddle"></span>
+            <span id="bSliceBottom"></span>
+        </div>
+    </div>
+<div class="bigSideBar" id="bigSideBar">
+        <div class="boxLogo"> <ion-icon class="arrowBack" id="arrowBack" name="arrow-back-outline"></ion-icon>
+            <img class="logoJo2024" src="/assets/imgs/Paris2024_ParaEmbleme_RVB_Mono_Blanc_2021.png.png"
+                alt="logoJo2024">
+                <ion-icon class="infos" name="alert-circle-outline"></ion-icon>
+        </div>
+        <div class="search-container" style="margin-top: 9px;">
+            <input class="searchBar" type="search" id="searchBar" placeholder="Search...">
+            <ion-icon name="search"></ion-icon>
+        </div>
+
+        <div class="boxFilter">
+            <div>
+                <p>Show me:</p><button class="sidebarButtonPerso">Open Now <ion-icon name="chevron-down"></ion-icon></button>
+            </div>
+            <div>
+                <p>Sort by:</p><button class="sidebarButtonPerso">Nearest <ion-icon name="chevron-down"></ion-icon></button>
+            </div>
+            <div>
+                <p class="filterText">filter</p><button class="sidebarButtonPerso"><ion-icon name="filter"></ion-icon>
+                    filter</button>
+            </div>
+        </div>
+        <ul class="listActivity">
+            <div class="itemActivity">
+                <div class="storeLogo">
+                    <img src="./assets/imgs/Three-Bars-adidas-logo-1.jpg.jfif.webp" alt="Logo" />
+                </div>
+                <div class="storeInfo">
+                    <h2 class="storeName">Adidas</h2>
+                    <p class="storeDistance">
+                        0.5 mi • <span class="storeStatus">Open 'til 6pm</span>
+                    </p>
+                </div>
+                <!-- <div class="boxLogosActivity">
+                    <ion-icon name="happy-outline"></ion-icon>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                </div> -->
+            </div>
+
+        </ul>
+    </div>
+
+</body>
+<script src="/assets/js/sidebar.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+</html>
