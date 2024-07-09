@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Styles communs pour les éléments du header */
+:root {
+    --background-color: #1b1b1b;
+    --button-color: #282828;
+    --button-hover-color: #3a3a3a;
+    --button-active-color: #1b1b1b;
+    --sidebar-button-color: #1b1b1b;
+    --sidebar-button-hover-color: #282828;
+    --sidebar-button-active-color: #3a3a3a;
+    --border-button-color: #6a6a6a;
+    --search-bar-color: #292929;
+    --store-info-color: #282828;
+    --text-color: #F5F4F4;
+    --grey-color: #494949;
+    --lighter-grey-color: #6c6c6c;
+    --maps-link-color: #6efdb8;
+    --maps-line-color: #6ff6bc;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    /* margin: 0;
+    padding: 0; */
+}
+
+button {
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border: 1px solid var(--lighter-grey-color);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: .55rem;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+}
+
+button:active {
+    background-color: var(--button-active-color);
+}
+
+.sidebarButton {
+    background-color: var(--sidebar-button-color);
+    color: var(--text-color);
+    border: 1px solid var(--lighter-grey-color);
+}
+
+.sidebarButton:hover {
+    background-color: var(--sidebar-button-hover-color);
+}
+
+.sidebarButton:active {
+    background-color: var(--sidebar-button-active-color);
+}
+
+button,
+.sidebarButton {
+    border-color: var(--border-button-color);
+}
+
+.search-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    /* position: absolute; */
+    top: 0rem;
+}
+
+.searchBar {
+    background-color: var(--search-bar-color);
+    color: var(--text-color);
+    border: 1px solid var(--lighter-grey-color);
+    padding: 10px 10px;
+    padding-right: 30px;
+    border-radius: .55rem;
+    width:100%;
+
+}
+
+.searchBar:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.search-container ion-icon {
+    position: relative;
+    right: 25px;
+    color: var(--text-color);
+    pointer-events: none;
+}
+
+/* Cache le bouton de suppression dans les champs de recherche */
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* Couleur du placeholder pour les différents navigateurs */
+input::placeholder {
+    color: var(--text-color);
+}
+
+input:-ms-input-placeholder {
+    color: var(--text-color);
+}
+
+input::-ms-input-placeholder {
+    color: var(--text-color);
+}
