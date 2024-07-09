@@ -1,0 +1,19 @@
+#mymap {
+    height: 100vh;
+}
+
+.mapStyle {
+    border-radius: 5px;
+}
+
+
+.leaflet-layer,
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out,
+.leaflet-control-attribution {
+    filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip, .leaflet-popup-close-button {
+    display: none;
+}
