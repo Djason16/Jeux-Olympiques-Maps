@@ -1,0 +1,57 @@
+.storeCard {
+    background-color: var(--background-color);
+    border-radius: 15px;
+    width: 30%;
+    height: 30%;
+    padding: 20px;
+    color: var(--text-color);
+    filter: drop-shadow(0 0 0.75rem #6c6c6c)
+}
+
+.flexInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flexInput input {
+    width: 96%;
+    height: 1.5rem;
+    font-size: larger;
+    border-radius: .75rem;
+    border: 1px solid var(--lighter-grey-color);
+    padding: 10px 10px;
+    margin: 1rem;
+}
+
+input::placeholder {
+    color: var(--lighter-grey-color);
+    opacity: 1;
+}
+
+.flexInput textarea {
+    width: 96%;
+    height: 10rem;
+    font-size: larger;
+    border-radius: .75rem;
+    border: 1px solid var(--lighter-grey-color);
+    padding: 10px 10px;
+    margin: 1rem;
+}
+
+.detailsButton {
+    width: 100%;
+    height: 3.5rem;
+    font-size: larger;
+    border-radius: 1rem;
+    margin-top: 1.3rem;
+}
+
+.detailsButton:hover {
+    background-color: green;
+}
+
+.detailsButton:active {
+    background-color: var(--button-hover-active);
+}

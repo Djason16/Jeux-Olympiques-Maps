@@ -23,8 +23,8 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
-    /* margin: 0;
-    padding: 0; */
+    margin: 0;
+    padding: 0;
 }
 
 button {
@@ -79,7 +79,7 @@ button,
     padding: 10px 10px;
     padding-right: 30px;
     border-radius: .55rem;
-    width:100%;
+    width: 100%;
 
 }
 

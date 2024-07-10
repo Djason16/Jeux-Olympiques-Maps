@@ -6,29 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/maps.css">
+    <link rel="stylesheet" href="/assets/css/sidebar.css">
+    <link rel="stylesheet" href="/assets/css/cards.css">
+    <link rel="stylesheet" href="/node_modules/leaflet/dist/leaflet.css" />
 </head>
 
 <body>
+    <div style="position: fixed; z-index: 3;">
+        <div class="sideBar" id="sideBar">
+            <div class="burger" id="burger">
+                <span id="bSliceTop"></span>
+                <span id="bSliceMiddle"></span>
+                <span id="bSliceBottom"></span>
+            </div>
+        </div>
+        <div class="bigSideBar" id="bigSideBar">
+            <div class="boxLogo"> <ion-icon class="arrowBack" id="arrowBack" name="arrow-back-outline"></ion-icon>
+                <img class="logoJo2024" src="/assets/imgs/emblem-white.svg" alt="logoJo2024">
+                <ion-icon class="infos" name="alert-circle-outline"></ion-icon>
+            </div>
+            <div class="search-container" style="margin-top: 9px;">
+                <input class="searchBar" type="search" id="searchBar" placeholder="Search...">
+                <ion-icon name="search"></ion-icon>
+            </div>
 
-    <button>Button</button>
-    <button class="sidebarButton">Open Sidebar</button>
-    <br>
-    <div class="search-container" style="margin-top: 9px;">
-        <input class="searchBar" type="search" id="searchBar" placeholder="Search...">
-        <ion-icon name="search"></ion-icon>
+            <div class="boxFilter">
+                <div>
+                    <p>Show me:</p><button class="sidebarButtonPerso">Open Now <ion-icon
+                            name="chevron-down"></ion-icon></button>
+                </div>
+                <div>
+                    <p>Sort by:</p><button class="sidebarButtonPerso">Nearest <ion-icon
+                            name="chevron-down"></ion-icon></button>
+                </div>
+                <div>
+                    <p class="filterText"> Filter</p><button class="sidebarButtonPerso"><ion-icon
+                            name="filter"></ion-icon>
+                        filter</button>
+                </div>
+            </div>
+            <ul class="listActivity">
+                <div class="itemActivity">
+                    <div class="storeLogo" id="storeLogo">
+                        <img src="./assets/imgs/Three-Bars-adidas-logo-1.jpg.jfif.webp" alt="Logo" />
+                    </div>
+                    <div class="storeInfo">
+                        <h2 class="storeName" id="storeName">Adidas</h2>
+                        <p class="storeDistance">
+                            0.5 mi • <span class="storeStatus">Open 'til <span id="storeTime">6pm</span></span>
+                        </p>
+                    </div>
+                </div>
+            </ul>
+        </div>
     </div>
-    <div style="margin-top: 55px;">
-        <ion-icon name="information-circle-outline"></ion-icon>
-        <ion-icon name="happy-outline"></ion-icon>
-        <ion-icon name="chevron-down"></ion-icon>
-        <ion-icon name="filter"></ion-icon>
-        <ion-icon name="options"></ion-icon>
-        <ion-icon name="bag-outline"></ion-icon>
-        <ion-icon name="time-outline"></ion-icon>
-        <ion-icon name="ribbon-outline"></ion-icon>
-        <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+    <div class="mapStyle" id="mymap" style="z-index: 0;">
+        <button class="bgBtn" id="darkModeButton"><img src="assets/imgs/bgbtn.png" alt="button"></button>
     </div>
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="/node_modules/leaflet/dist/leaflet.js"></script>
+    <script type="module" src="/assets/js/script.js"></script>
+    <script type="module" src="/assets/js/sidebar.js"></script>
 </body>
 
 </html>
